@@ -65,7 +65,7 @@ function Resume() {
       <h2>Resume</h2>
       <div className="resume-preview" style={{ marginBottom: '1rem' }}>
         <iframe
-          src="/resume.pdf"
+          src="./resume.pdf"
           title="Resume Preview"
           width="100%"
           height="600px"
@@ -73,7 +73,7 @@ function Resume() {
         />
       </div>
       <p>
-        <a href="/resume.pdf" download="resume.pdf" className="download-button">
+        <a href="./resume.pdf" download="resume.pdf" className="download-button">
           Download Resume
         </a>
       </p>
