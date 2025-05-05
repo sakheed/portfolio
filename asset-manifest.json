@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.8d1ca9e1.css",
-    "main.js": "/portfolio/static/js/main.75b4729b.js",
+    "main.css": "/portfolio/static/css/main.dc54f012.css",
+    "main.js": "/portfolio/static/js/main.ac6cc5b9.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/moviepedia.png": "/portfolio/static/media/moviepedia.9a1a1c6cff243c3fbd4a.png",
+    "static/media/haksafety.png": "/portfolio/static/media/haksafety.ac1a9a5ac92c53b41f59.png",
+    "static/media/sudoku.png": "/portfolio/static/media/sudoku.b730fa231fe38dd8259c.png",
+    "static/media/signalq.PNG": "/portfolio/static/media/signalq.63937570e90971732eae.PNG",
+    "static/media/photo.jpeg": "/portfolio/static/media/photo.eaf67ce44744331fda7e.jpeg",
     "index.html": "/portfolio/index.html",
-    "main.8d1ca9e1.css.map": "/portfolio/static/css/main.8d1ca9e1.css.map",
-    "main.75b4729b.js.map": "/portfolio/static/js/main.75b4729b.js.map",
+    "main.dc54f012.css.map": "/portfolio/static/css/main.dc54f012.css.map",
+    "main.ac6cc5b9.js.map": "/portfolio/static/js/main.ac6cc5b9.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d1ca9e1.css",
-    "static/js/main.75b4729b.js"
+    "static/css/main.dc54f012.css",
+    "static/js/main.ac6cc5b9.js"
   ]
 }
