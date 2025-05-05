@@ -1,38 +1,42 @@
 import React, { useState } from 'react';
 import SwipeableViews from 'react-swipeable-views';
 
+import haksafety from './images/projects/haksafety.png';
+import sudokuImg from './images/projects/sudoku.png';
+import moviepediaImg from './images/projects/moviepedia.png';
+import signalqImg from './images/projects/signalq.PNG';
+
 function Projects() {
   // List of projects with updated fields.
   const projectsArr = [
     {
       title: "SignalQ",
-      photo: "projects/signalq.jpg",
+      photo: signalqImg,
       date: "September 2024 - Present",
       description:
-        "Collaborated in an Agile Team to build an iOS app in Swift that records low-latency audio, employs machine learning algorithms to classify gunshots, and triggers storage of associated geographic data in Objectbox. Still in progress so links to come. ",
-      websiteLink: "#", // Placeholder, update as needed.
-      codeLink: "#", // Placeholder, update as needed.
+        "Collaborated in an Agile Team to build an iOS app in Swift that records low-latency audio, employs machine learning algorithms to classify gunshots, triggers storage of associated geographic data in Realm database, and facilitates upload to remote server via GRPC.",
+      codeLink: "https://github.com/sakheed/capstone-ios-app",
     },
     {
       title: "MoviePedia",
-      photo: "projects/moviepedia.png",
-      date: "September 2024 - Present",
+      photo: moviepediaImg,
+      date: "December 2023",
       description:
         "Collaborated in Agile team to create a website for users to drag and drop movies into custom lists and admin to add new movies.",
       websiteLink: "https://amansjot.github.io/Team5-MoviePedia/",
       codeLink: "https://github.com/amansjot/Team5-MoviePedia",
     },
     {
-      title: "MathBridge",
+      title: "Sudoku",
+      photo: sudokuImg,
       date: "March 2024",
       description:
-        "Created a React WebApp with an embedded Python compiler using Typescript, HTML, CSS & Chakra to strengthen K-12 students’ performance in mathematical reasoning.",
-      websiteLink: "#",
-      codeLink: "#",
+        "Created an AI algorithm to solve a sudoku puzzle.",
+      codeLink: "https://github.com/sakheed/sudoku",
     },
     {
       title: "HAKSafety",
-      photo: "projects/haksafety.png",
+      photo: haksafety,
       date: "April 2023",
       description:
         "Worked in an Agile team to develop and deploy an online panic button using TypeScript, React, HTML, CSS, & Chakra. Won first place for M&T Bank’s Hack, out of 50 projects.",
@@ -61,8 +65,8 @@ function Projects() {
             <div className="project-left">
               <div className="project-image">
                 <img
-                  src={project.photo ? project.photo : "placeholder.jpg"}
-                  alt="Project screenshot"
+                  src={project.photo}
+                  alt={`${project.title} screenshot`}
                   className="project-screenshot"
                 />
               </div>
@@ -70,16 +74,18 @@ function Projects() {
             </div>
             <div className="project-right">
               <div className="project-buttons">
+                {project.websiteLink && (
+                  <a
+                    href={project.websiteLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-button"
+                  >
+                    Link to Website
+                  </a>
+                )}
                 <a
-                  href={project.websiteLink || "#"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-button"
-                >
-                  Link to Website
-                </a>
-                <a
-                  href={project.codeLink || "#"}
+                  href={project.codeLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="project-button"

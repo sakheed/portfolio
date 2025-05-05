@@ -37,7 +37,7 @@ function WhatIKnow() {
     'Data Mining',
     'Corporate Finance I & II',
     'Investments',
-    'Intro to FinTech'
+    'Fundamentals of FinTech'
   ];
 
   const handleChangeIndex = (idx) => {
